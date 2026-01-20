@@ -2,7 +2,7 @@ import SwiftUI
 
 struct WeightRepsPicker: View {
     @Environment(\.dismiss) private var dismiss
-    var viewModel: WorkoutViewModel
+    @Bindable var viewModel: WorkoutViewModel
 
     private let weightRange = stride(from: 0.0, through: 300.0, by: 2.5).map { $0 }
     private let repsRange = Array(1...30)

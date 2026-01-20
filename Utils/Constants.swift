@@ -12,28 +12,28 @@ enum AppConstants {
 }
 
 // MARK: - App Colors
-extension Color {
+extension ShapeStyle where Self == Color {
     // Couleurs principales
-    static let appPrimary = Color(hex: "FF6B35")     // Orange gym
-    static let appSecondary = Color(hex: "1E88E5")  // Bleu
-    static let appAccent = Color(hex: "FFB74D")     // Orange clair
+    static var appPrimary: Color { Color(hex: "FF6B35") }     // Orange gym
+    static var appSecondary: Color { Color(hex: "1E88E5") }   // Bleu
+    static var appAccent: Color { Color(hex: "FFB74D") }      // Orange clair
 
     // Couleurs fonctionnelles
-    static let appSuccess = Color(hex: "4CAF50")    // Vert
-    static let appWarning = Color(hex: "FF9800")    // Orange warning
-    static let appError = Color(hex: "F44336")      // Rouge
+    static var appSuccess: Color { Color(hex: "4CAF50") }     // Vert
+    static var appWarning: Color { Color(hex: "FF9800") }     // Orange warning
+    static var appError: Color { Color(hex: "F44336") }       // Rouge
 
     // Couleurs de fond
-    static let appBackground = Color(UIColor.systemBackground)
-    static let appCardBackground = Color(UIColor.secondarySystemBackground)
-    static let appGroupedBackground = Color(UIColor.systemGroupedBackground)
+    static var appBackground: Color { Color(UIColor.systemBackground) }
+    static var appCardBackground: Color { Color(UIColor.secondarySystemBackground) }
+    static var appGroupedBackground: Color { Color(UIColor.systemGroupedBackground) }
 
     // Couleurs des catégories d'exercices
-    static let pushColor = Color(hex: "E53935")     // Rouge
-    static let pullColor = Color(hex: "1E88E5")     // Bleu
-    static let legsColor = Color(hex: "43A047")     // Vert
-    static let jjbColor = Color(hex: "7B1FA2")      // Violet
-    static let mobiliteColor = Color(hex: "00ACC1") // Cyan
+    static var pushColor: Color { Color(hex: "E53935") }      // Rouge
+    static var pullColor: Color { Color(hex: "1E88E5") }      // Bleu
+    static var legsColor: Color { Color(hex: "43A047") }      // Vert
+    static var jjbColor: Color { Color(hex: "7B1FA2") }       // Violet
+    static var mobiliteColor: Color { Color(hex: "00ACC1") }  // Cyan
 }
 
 // MARK: - Color Hex Extension
